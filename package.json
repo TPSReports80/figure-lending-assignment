@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx tsx --watch server.ts & npx vite",
+    "dev": "npm run start:server & npm run start:client",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start:client": "vite",
+    "start:server": "npx tsx --watch server.ts"
   },
   "dependencies": {
     "express": "^4.21.1",
