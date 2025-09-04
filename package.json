@@ -10,12 +10,14 @@
     "preview": "vite preview",
     "start:client": "vite",
     "start:server": "npx tsx --watch server.ts",
-    "zip": "zip -r ../YOUR_NAME-technical-submission.zip . -x node_modules/**\\*"
+    "zip": "powershell \"$files = Get-ChildItem -Path . -Exclude node_modules; Compress-Archive -Path $files -DestinationPath ../YOUR_NAME-technical-submission.zip -Force\""
   },
   "dependencies": {
     "express": "^4.21.1",
+    "lucide-react": "^0.542.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-select": "^5.10.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
