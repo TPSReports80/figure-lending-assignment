@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "start:client": "vite",
     "start:server": "npx tsx --watch server.ts",
-    "zip": "powershell \"$files = Get-ChildItem -Path . -Exclude node_modules; Compress-Archive -Path $files -DestinationPath ../YOUR_NAME-technical-submission.zip -Force\""
+    "zip": "zip -r ../YOUR_NAME-technical-submission.zip . -x node_modules/**\\*"
   },
   "dependencies": {
     "express": "^4.21.1",
